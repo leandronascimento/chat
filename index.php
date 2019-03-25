@@ -36,10 +36,10 @@ $user_colour = array_rand($colours);
 <script language="javascript" type="text/javascript">  
 $(document).ready(function(){
   //criando um novo objeto WebSocket.
-  var wsUri = "ws://192.168.96.89:9000/chat/server.php";  
+  var wsUri = "ws://192.168.17.15:9000/chat/server.php";
   websocket = new WebSocket(wsUri); 
   
-  websocket.onopen = function(ev) { // abre a coneção 
+  websocket.onopen = function() { // abre a coneção
     $('#message_box').append("<div class=\"system_msg\">Conectado!</div>"); //Notificando o usuario que ele esta conectado
   }
 
